@@ -3,6 +3,7 @@ import { MdHome, MdKeyboardArrowDown, MdInventory } from "react-icons/md";
 import { AiOutlineLogout } from "react-icons/ai";
 import { useState } from "react";
 import { FaChartPie, FaUser } from "react-icons/fa";
+import logo from '../assets/Image/logo.png'
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -127,9 +128,13 @@ const Sidebar = () => {
       {/* Logo */}
       <div>
         <div className="flex items-center justify-center h-[70px] backdrop-blur-md bg-white/60 border-b border-gray-200">
-          <h1 className="text-2xl font-bold tracking-tight text-gray-800">
+          {/* <h1 className="text-2xl font-bold tracking-tight text-gray-800">
             Ramot<span className="text-indigo-500 font-normal">LMS</span>
-          </h1>
+          </h1> */}
+           <img 
+        src={logo} 
+        className="h-[45px] md:h-[60px] w-auto object-contain" 
+      />
         </div>
 
         {/* Menu */}
